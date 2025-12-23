@@ -2,7 +2,7 @@ FROM node:20.14-alpine AS build
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install necessary packages for build
 RUN apk add --no-cache \
